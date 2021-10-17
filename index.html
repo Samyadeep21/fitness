@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Fitness-Club</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header>
+    <a href="#" class="logo">Fitness<span class="sp"> Club</span></a>
+    <div class="toggle"><img src="toggle.png" alt="">
+
+    </div>
+  </header>
+
+  <div class="topnav">
+    <a class="active" href="index.html">Home</a>
+    <a class="a2" href="#news">News</a>
+    <a class="a2" href="#contact">Contact</a>
+    <a class="a2" href="about.html">About</a>
+    <a class="a2" href="apply.html">Apply</a>
+  </div>
+
+  <div class="banner">
+    <video class="v1" src="bg.mp4" autoplay muted loop type="mp4">
+
+    </video>
+    <div class="textBox">
+      <h2 class="h1">More Than Just Fitness</h2>
+      <p class="p1">hey,there!! <br>
+        want to get HEALTHY <br>
+        Don't Sweat It! These 101 Best Fitness and Workout Site Will Keep You Motivated <br>
+
+        Getting to the gym and prioritizing your fitness isn’t easy—we know! But staying on track and working toward your health goals is essential. So for those days when you need some extra motivation, these motivating fitness quotes and workout
+        quotes can help.
+
+        From uplifting gym quotes that’ll get you hyped for your workout to fitness motivation quotes that’ll inspire you to get up and get going, think of these inspiring words like an on-demand personal trainer you can look to at anytime for extra
+        support and gym-spiration.
+      </p>
+      <a class="a1" href="#">Read More</a>
+    </div>
+    <div class="imgbox"><img class="man" src="man.png" alt="">
+      <ul class="sci">
+        <li><a href="#"><img src="facebook.png" alt=""></a></li>
+        <li><a href="#"><img src="instagram.png" alt=""></a></li>
+        <li><a href="#"><img src="twitter.png" alt=""></a></li>
+      </ul>
+    </div>
+  </div>
+
+
+<button class="open-button" onclick="openForm()">Open Form</button>
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+
+</body>
+
+</html>
